@@ -1,0 +1,55 @@
+{
+  "build": {
+    "devPath": "../src",
+    "distDir": "../src",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "PC Agent",
+    "version": "1.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "window": { "setSkipTaskbar": true },
+
+      "all": false,
+      "globalShortcut": {
+        "all": true
+      },
+      "shell": {
+        "all": false,
+        "open": true
+      }
+    },
+    "windows": [
+      {
+        "resizable": false,
+        "decorations": false,
+        "transparent": true,
+        "title": "PC Agent",
+        "x": 0,
+        "y": 0,
+        "fullscreen": false
+      }
+    ],
+    "systemTray": {
+      "iconPath": "icons/command_32px.png",
+      "iconAsTemplate": true
+    },
+    "security": {
+      "csp": null
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.pcagent.release",
+      "icon": [
+        "icons/command_32px.png",
+        "icons/icon.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "resources": ["./assets/ggml-tiny-q5_1.bin"]
+    }
+  }
+}

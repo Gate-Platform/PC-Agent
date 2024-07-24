@@ -1,0 +1,145 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+
+  color: black;
+
+  /* font-synthesis: none; */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#messages-container {
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+  padding-right: 8px;
+  padding-left: 8px;
+  margin-top: 44px;
+  max-height: 87%;
+  overflow-y: auto;
+}
+.refresh-button {
+  cursor: pointer;
+  padding: 8px;
+  position: absolute;
+  top: 10px;
+  left: 8px;
+}
+.settings-button {
+  cursor: pointer;
+  padding: 8px;
+  position: absolute;
+  top: 10px;
+  right: 2px;
+}
+.ai-message {
+  padding: 5px;
+}
+.user-message {
+  padding: 5px;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  background: transparent;
+}
+div {
+  /* white-space: pre; */
+}
+
+code {
+  border-radius: 8px !important;
+  padding: 14px !important;
+
+  /* font-size: 14px; */
+  /* font-family: sans-serif; */
+  /* padding-top: 6px; */
+  /* padding-bottom: 6px; */
+
+  /* padding-right: 12px; */
+  /* padding-left: 12px; */
+}
+
+#all {
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 93.6%;
+}
+#allSettings {
+  padding: 20px;
+  margin-top: 10px;
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10px;
+}
+textarea {
+  bottom: 6.5%;
+  /* bottom: 65px; */
+  width: 90.5%;
+  left: 3%;
+  /* height: 30px; */
+  /* left: 50%;
+  transform: translateX(-50%); */
+  resize: none;
+  position: absolute;
+  /* left: 0;
+  right: 0; */
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 0.9em;
+  font-weight: 500;
+  font-family: inherit;
+  color: black;
+  background-color: rgb(238, 238, 238);
+  transition: border-color 0.25s;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: #396cd8;
+}
+button:active {
+  border-color: #396cd8;
+  background-color: #e8e8e8;
+}
+
+textarea,
+button {
+  outline: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #f6f6f6;
+    background-color: #2f2f2f;
+  }
+
+  a:hover {
+    color: #24c8db;
+  }
+
+  textarea,
+  button {
+    color: #ffffff;
+    background-color: #0f0f0f98;
+  }
+  button:active {
+    background-color: #0f0f0f69;
+  }
+}

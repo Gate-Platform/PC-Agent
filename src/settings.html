@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Settings</title>
+    <script type="module" src="settings.js" defer></script>
+  </head>
+
+  <body>
+    <div id="allSettings">
+      <label for="groqApiKey">Groq API key</label>
+      <br />
+      <input type="text" id="groqApiKey" size="32px" />
+      <br />
+
+      <br />
+      <label for="groqApiKey">Toggle Hotkey: Alt + Q</label>
+
+      <br />
+      <br />
+
+      <label>
+        <input type="checkbox" id="screenContext" checked /> Screen context
+      </label>
+      <br />
+      <label>
+        <input type="checkbox" id="audioContext" checked /> Audio context
+      </label>
+    </div>
+  </body>
+</html>

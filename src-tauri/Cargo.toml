@@ -1,0 +1,56 @@
+[package]
+name = "PCAgent"
+version = "1.0.0"
+description = "Personal Computer Agent"
+authors = ["gate"]
+edition = "2021"
+rust-version = "1.75"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[build-dependencies]
+tauri-build = { version = "1.5.3", features = [] }
+
+[dependencies]
+tauri = { version = "1.7.1", features = [
+    "global-shortcut-all",
+    "window-set-skip-taskbar",
+    "system-tray",
+    "shell-open",
+] }
+
+rubato = "0.15.0"
+lazy_static = "1.5.0"
+hound = "3.5.1"
+cpal = "0.15.3"
+auto-launch = "0.5.0"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1.0"
+reqwest = { version = "0.12.5", features = ["json"] }
+global-hotkey = "0.5.4"
+whisper-rs = "0.11.1"
+win-screenshot = "4.0.11"
+image = "0.25.1"
+tokio = { version = "1.38.0", features = ["full"] }
+futures = "0.3.30"
+anyhow = "1.0"
+tempfile = "3.10.1"
+single-instance = "0.3.3"
+
+[dependencies.windows]
+version = "0.58"
+features = [
+    "Win32_Foundation",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_System_Threading",
+    "Globalization",
+    "Graphics_Imaging",
+    "Media_Ocr",
+    "Storage",
+    "Foundation_Collections",
+    "Foundation",
+    "Storage_Streams",
+]
+
+[features]
+# This feature is used for production builds or when a dev server is not specified, DO NOT REMOVE!!
+custom-protocol = ["tauri/custom-protocol"]
