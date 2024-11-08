@@ -30,9 +30,9 @@ async function call_ai(messagesContainer, messageDiv) {
 
   const payload = {
     messages: [{ role: "system", content: ai_context.content }, ...messages],
-    model: "llama3-70b-8192",
+    model: "llama-3.2-90b-text-preview",
     temperature: 0.5,
-    max_tokens: 512,
+    max_tokens: 800,
     top_p: 1,
     stream: true,
     stop: null,
