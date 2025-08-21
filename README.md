@@ -1,11 +1,15 @@
 # PC-Agent
 
-PC Agent is an AI that addresses key limitations of current chatbots.
+#### PC Agent is an AI that addresses key limitations of current chatbots.
 
 It uses screen context and audio transcription to understand your computer environment, to better aid with tasks
 
 ---
 
-Alt + Q to toggle the app
+[![Demo Video](https://img.youtube.com/vi/97tUynaJusY/maxresdefault.jpg)](https://youtu.be/97tUynaJusY)
 
-Uses [groq](https://console.groq.com/keys) api
+---
+
+### Alt + Q to toggle the app
+
+Uses [groq api](https://console.groq.com/keys)
